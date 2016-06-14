@@ -289,6 +289,16 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
   html {
     font-size: 6px; } }
 
+@media (max-width: 1260px) {
+  .main-wrapper .page-2 {
+    background: url("../img/background-productos.png") right center no-repeat;
+    background-size: 75%; } }
+
+@media (max-width: 1000px) {
+  .main-wrapper .page-2 {
+    background: url("../img/background-productos.png") right center no-repeat;
+    background-size: 0; } }
+
 @media (max-width: 800px) {
   .main-wrapper .nav-header {
     display: none; }
@@ -396,8 +406,8 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
 .page-2 {
   position: relative;
   width: 100%;
-  background: url("../img/background-products.jpg") left center no-repeat;
-  background-size: cover; }
+  background: url("../img/background-productos.png") right center no-repeat;
+  background-size: contain; }
   .page-2 .article-wrapper {
     padding-left: 10%; }
   .page-2 p + p {

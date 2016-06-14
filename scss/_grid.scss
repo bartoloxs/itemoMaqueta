@@ -198,7 +198,22 @@
   	font-size: 6px;
   }
 }
-
+@media (max-width: 1260px) {
+	.main-wrapper {
+		.page-2 {
+			background: url('../img/background-productos.png') right center no-repeat;
+			background-size: 75%;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.main-wrapper {
+		.page-2 {
+			background: url('../img/background-productos.png') right center no-repeat;
+			background-size: 0;
+		}
+	}
+}
 @media (max-width: 800px) {
 	.main-wrapper {
 		.nav-header {

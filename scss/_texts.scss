@@ -111,8 +111,8 @@
 	position: relative;
 	width: 100%;
 
-	background: url('../img/background-products.jpg') left center no-repeat;
-	background-size: cover;
+	background: url('../img/background-productos.png') right center no-repeat;
+	background-size: contain;
 
 	.article-wrapper {
 		padding-left: 10%;
