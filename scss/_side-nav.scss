@@ -1,0 +1,29 @@
+
+
+.side-nav,
+.side-nav-header,
+.side-nav-body {
+	background-color: $side-nav-header;
+}
+
+
+
+.side-nav {
+	font-family: $font1;
+	.side-nav-body {
+		font-size: 1.3rem;
+	}
+}
+
+.side-nav-body {
+	margin: 0;
+	padding: 0 16px;
+
+	li {
+		margin-top: 0.6em; 
+	}
+
+	.md-button {
+		text-align: left;
+	}
+}

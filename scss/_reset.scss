@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-size: 10px;
+}
+
+fieldset {border: 0;}
+
+ul,li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+
+	margin: 0;
+	padding: 0;
+	
+	line-height: 1.4;
+	font-weight: normal;
+	font-family: $font3;
+}
+
+.no-background {
+	background: transparent;
+}
+
+.md-button{
+	&.circle {
+		min-width: 0;
+		border-radius: 50%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		.md-ripple-container {
+			border-radius: 50%;
+			overflow: hidden;
+		}
+	}
+	&.red {
+
+		padding-left: 20px;
+		padding-right: 20px;
+
+		background: $background1;
+		color: $color1;
+		border: 2px solid transparent;
+
+		font-family: $font2;
+		font-size: 1.2rem;
+		letter-spacing: 2.5;
+
+		&:hover {
+			background: $background1;
+			border: 2px solid $color1;
+		}
+		&.no-hover-efects {
+			&:hover {
+				border: 2px solid transparent;
+			}	
+		}
+	}
+	&.hide-halo {
+		border-radius: 200px;
+		.md-ripple-container {
+			border-radius: 200px;
+			overflow: hidden;
+		}
+	}
+}
+
+.input-bitemo {
+	width: 260px;
+	input {
+		color: $color4 !important;
+		height: 41px;
+		border: 1px solid $border1 !important;
+		border-top-left-radius: 100px;;
+		border-bottom-left-radius: 100px;;
+		line-height: 43px;
+		padding-left: 23px;
+		padding-right: 20px;
+		text-align: left;
+		font-size: 1.8rem;
+	}
+	&.md-input-focused,
+	&.md-input-has-value { 
+		label:not(.md-no-float) {
+			transform: translate3d(-17px,-1px,0) scale(1) !important;
+			color: rgba(0,0,0,0.38) !important;
+		}
+	}
+	label {
+		line-height: 10px;
+		padding-left: 40px !important;
+		text-align: left;
+		font-size: 14px;
+	}
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+	border-color: rgba(0,0,0,0.12) !important;
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused label {
+	color: rgba(0,0,0,0.38);
+}

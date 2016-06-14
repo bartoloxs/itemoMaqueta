@@ -1,13 +1,385 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="text/javascript" src="scripts/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<title>Polyglot (X)HTML Template</title>
-	</head>
-	<body>
-				
-	</body>
+﻿<html lang="es" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body ng-app="myapp" ng-cloak>
+
+<div class="main-wrapper" ng-controller="MyController">
+
+    <div layout="row" class="nav-bar">
+        <md-sidenav md-component-id="right" md-is-open="isSidenavOpen" class="md-sidenav-right side-nav">
+         		<md-toolbar>
+					    <div class="md-toolbar-tools side-nav-header">
+					      <img src="../img/logo.png">
+					    </div>
+					    <ul class="side-nav-body">
+					    	<li>
+					    		<md-button data-scroll-to="anchor-1"
+											ng-click="scrollToElement($event); openRightMenu()">
+					    			<span class="js-scroll-to active"
+											title="Bitemo">
+              				BITEMO
+					    			</span>
+            			</md-button>
+          			</li>
+					    	<li>
+					    		<md-button data-scroll-to="anchor-2"
+											ng-click="scrollToElement($event); openRightMenu()">
+										<span class="js-scroll-to active"
+											title="Productos">
+              				PRODUCTOS
+										</span>
+            			</md-button>
+					    	</li>
+					    	<li>
+					    		<md-button data-scroll-to="anchor-3"
+											ng-click="scrollToElement($event); openRightMenu()">
+						    		<span class="js-scroll-to active"
+											title="Adquisición">
+	              			ADQUISICIÓN
+						    		</span>
+            			</md-button>
+					    	</li>
+					    	<li>
+					    		<md-button data-scroll-to="anchor-4"
+											ng-click="scrollToElement($event); openRightMenu()">
+					    			<span class="js-scroll-to active"
+											title="Localización">
+              				LOCALIZACIÓN
+					    			</span>
+            			</md-button>
+					    	</li>
+					    	<li>
+					    		<md-button data-scroll-to="anchor-5"
+											ng-click="scrollToElement($event); openRightMenu()">
+					    			<span class="js-scroll-to active"
+											title="Localización">
+              				CONTACTO
+					    			</span>
+            			</md-button>
+					    	</li>
+					    </ul>
+					  </md-toolbar>
+        </md-sidenav>
+				<md-content class="no-background responsive-nav">
+				  <md-button ng-click="openRightMenu()" class="no-background md-fab" aria-label="FAB">
+				    <i class="material-icons">menu</i>
+				  </md-button>
+				</md-content>				
+				<div class="nav-header justify-content align-middle">
+					<img class="inline-block" src="../img/logo.png">
+					 <ul class="inline-block">
+				    	<li>
+				    		<md-button data-scroll-to="anchor-1"
+										ng-click="scrollToElement($event)">
+				    			<span class="js-scroll-to active"
+										title="Bitemo">
+            				BITEMO
+				    			</span>
+          			</md-button>
+        			</li>
+				    	<li>
+				    		<md-button 
+										data-scroll-to="anchor-2"
+										ng-click="scrollToElement($event)">
+									<span class="js-scroll-to active"
+										title="Productos">
+            				PRODUCTOS
+									</span>
+          			</md-button>
+				    	</li>
+				    	<li>
+				    		<md-button 
+										data-scroll-to="anchor-3"
+										ng-click="scrollToElement($event)">
+					    		<span class="js-scroll-to active"
+										title="Adquisición">
+              			ADQUISICIÓN
+					    		</span>
+          			</md-button>
+				    	</li>
+				    	<li>
+				    		<md-button 
+										data-scroll-to="anchor-4"
+										ng-click="scrollToElement($event)">
+				    			<span class="js-scroll-to active"
+										title="Localización">
+            				LOCALIZACIÓN
+				    			</span>
+          			</md-button>
+				    	</li>
+				    	<li>
+				    		<md-button 
+										data-scroll-to="anchor-5"
+										ng-click="scrollToElement($event)">
+				    			<span class="js-scroll-to active"
+										title="Localización">
+            				CONTACTO
+				    			</span>
+          			</md-button>
+				    	</li>
+				    </ul>
+				</div>
+    </div>
+
+		<section class="wrapper">
+			<article id="anchor-1" class="page page-1 section">
+				<div class="article-wrapper">
+					<div>
+						<h2 class="title main white center-element center-text">Mejoramos la vida de la gente</h2>
+						<div class="description-1">
+							<p class="f18 gray grid-750 center-text center-element">
+								Somos una empresa dinámica, sostenible, innovadora, pero sobre todo somos una empresa <b>comprometida</b>.  Apostamos por un uso social de la tecnología acercándola a aquellos que no pueden expresarse de forma autónoma.
+							</p>
+							<p class="f18 gray grid-750 center-text center-element">
+								<md-button ng-click="toggleContent($event)" class="no-background circle" data-content="text-1">
+									<i class="material-icons">keyboard_arrow_down</i>
+							  </md-button>
+								<span id="text-1" class="plegable hidden">
+									Nos dedicado a facilitar la vida de las personas con algún tipo de discapacidad, física o intelectual. Nos especializamos en tus necesidades para ajustarnos a ellas y esto sólo podemos hacerlo dando una atención personalizada, caso por caso.
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="next-section center-text">
+						<md-button class="no-background"						
+								data-scroll-to="anchor-2"
+								ng-click="scrollToElement($event)">
+							<p class="js-scroll-to"
+								title="Productos">PRODUCTOS</p>
+							<i class="material-icons">keyboard_arrow_down</i>
+					  </md-button>
+					</div>
+				</div>
+			</article>
+			<article id="anchor-2" class="page page-2 section">
+				<div class="article-wrapper">
+						<h2 class="title main black">Productos</h2>
+						<div class="grid-500">							
+							<p class="f18 dark-gray">
+								<b>Monitor emocional</b> es un proyecto que trata de darle voz a personas que no pueden comunicarse. 
+							</p>						
+							<p class="f18 dark-gray">
+								Consiste en una aplicación que muestra a tiempo real en un gráfico las cuatro emociones esenciales, alegría, tristeza, ira, miedo. Esta aplicación interactúa con una camiseta inteligente que lleva puesta el usuario. Dicha camiseta es única y se fabrica y configura específicamente para cubrir las necesidades de cada usuario. 
+							</p>						
+							<p class="f18 dark-gray">
+								Gracias al monitor emocional se pueden crear patrones para configurar alertas de cualquier tipo. El potencial es infinito.
+							</p>
+							<p class="f16 font-montserrat-bold">SOLICITAR MÁS INFORMACIÓN</p>
+						</div>
+					<div class="next-section center-text">
+						<md-button class="no-background"
+								data-scroll-to="anchor-3"
+								ng-click="scrollToElement($event)">
+							<p class="js-scroll-to"
+								title="Adquisición">ADQUISICIÓN</p>
+							<i class="material-icons">keyboard_arrow_down</i>
+					  </md-button>
+					</div>
+				</div>
+			</article>
+			<article id="anchor-3" class="page page-3 section">
+				<div class="article-wrapper">
+					<div>
+						<h2 class="title main white center-element center-text">Adquisición</h2>
+						<ul class="inline-list center-element justify-content align-top sd-center-content">
+							<li class="inline-block center-text">
+								<span class="icon-bitemo">
+									<i class="material-icons">file_download</i>
+								</span>
+								<p class="title secondary white">RESERVA</p>
+								<p class="dark-gray f18 bold">
+									Rellenando un formulario se reserva la licencia de la aplicación. Debido a la naturaleza del proyecto no se empiezan a fabricar las camisetas hasta llegar a un volumen mínimo. De igual modo, para garantizar el mejor trato a nuestros clientes.
+								</p>
+							</li>
+							<li class="inline-block center-text">
+								<span class="icon-bitemo">
+									<i class="material-icons">person_outline</i>
+								</span>
+								<p class="title secondary white">PERSONALIZACIÓN</p>
+								<p class="dark-gray f18 bold">
+									Cada licencia va unida a una camiseta que se fabrica unica y exclusivamente para un usuario concreto. Para dicha personalización se realizan visitas al usuario para realizar mediciones previas.
+								</p>
+							</li>
+							<li class="inline-block center-text">
+								<span class="icon-bitemo">
+									<i class="material-icons">settings</i>
+								</span>
+								<p class="title secondary white">IMPLANTACIÓN</p>
+								<p class="dark-gray f18 bold">
+									Una vez el producto está finalizado se realiza la implantación. Para ello se desplaza un equipo de especialistas al lugar donde se utilizará el producto. La implantación consta de una puesta en marcha y 4 horas de formación.
+								</p>
+							</li>
+						</ul>
+						<div class="center-text">
+							<md-button class="red hide-halo">
+								<span>Reserva de la licencia</span>
+						  </md-button>
+						</div>
+					</div>
+					<div class="next-section center-text">
+						<md-button class="no-background" 
+								data-scroll-to="anchor-4"
+								ng-click="scrollToElement($event)">
+							<p class="js-scroll-to"
+								title="Lozalización">LOCALIZACIÓN</p>
+							<i class="material-icons">keyboard_arrow_down</i>
+					  </md-button>
+					</div>
+				</div>
+			</article>
+			<article id="anchor-4" class="page page-4 section">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.366749228148!2d-3.707271084276604!3d40.42287726318882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287d2c855a8b%3A0x9d6036b7ce9ff090!2sCalle+de+la+Madera%2C+13%2C+28004+Madrid!5e0!3m2!1ses!2ses!4v1465663128822" height="500" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+				<div class="subscribe-newsletter">
+					<form id="newletter-form" class="grid-960 center-element justify-content">
+						<div class="inline-block">
+							<p class="f27 font-montserrat-regular">Manténgase informado</p>
+							<p class="f18 font-montserrat-regular dark-gray">Únase a nuestro Newsletter</p>
+						</div>
+						<div class="inline-block">
+							<md-input-container class="input-bitemo">
+							  <label>Inserte su correo electrónico</label>
+							  <input type="text" ng-model="user.name">
+							</md-input-container>
+							<md-button class="red hide-halo">
+								<span>Enviar</span>
+						  </md-button>
+						</div>
+					</form>
+				</div>
+			</article>
+			<article id="anchor-5" class="page page-5 section">	
+					<form id="contact-form" class="contact-form grid-960 center-element justify-content align-top">
+						<div class="contact-info inline-block">
+							<p class="title f38">Contacta con nosotros</p>
+							<p class="f18">Bitemo Emotional Technology</p>
+							<ul>
+								<li><i class="material-icons">location_on</i>Calle de la Madera, 13</li>
+								<li><i class="material-icons">phone</i>Phone. +33 666 66 66 00</li>
+								<li><i class="material-icons">mail_outline</i><span class="red">info@bitemo.com</span></li>
+							</ul>
+						</div>
+						<fieldset class="inline-block">
+			        <md-input-container>
+								<label>Nombre (required)</label>
+								<input type="text" required>
+							</md-input-container>
+			        <md-input-container>
+								<label>Apellidos (required)</label>
+								<input type="text" required>
+							</md-input-container>
+			        <md-input-container>
+								<label>¿Cómo podemos ayudarte?</label>
+								<input type="text">
+							</md-input-container>
+			        <md-input-container>
+								<label>Número de teléfono</label>
+								<input type="text" required>
+							</md-input-container>
+			        <md-input-container>
+								<label>Tu Email (requerido)</label>
+								<input type="text" required>
+							</md-input-container>
+							<md-button class="red hide-halo no-hover-efects no-margin right">
+								<span class="inline-block">Enviar</span><i class="material-icons right inline-block">keyboard_arrow_right</i>
+						  </md-button>
+						</fieldset>
+					</form>
+			</article>
+			<ul class="side-index-nav">
+				<li>
+					<a href="#" 
+							class="js-scroll-to active"
+							title="Inicio"
+							data-scroll-to="anchor-1"
+							ng-click="scrollToElement($event)"></a>
+				</li>
+				<li>
+					<a href="#" 
+							class="js-scroll-to" 
+							title="Productos"
+							data-scroll-to="anchor-2"
+							ng-click="scrollToElement($event)"></a>
+				</li>
+				<li>
+					<a href="#" 
+							class="js-scroll-to"
+							title="Adquisición"
+							data-scroll-to="anchor-3"
+							ng-click="scrollToElement($event)"></a>
+				</li>
+				<li>
+					<a href="#" 
+							class="js-scroll-to"
+							title="Mapa"
+							data-scroll-to="anchor-4"
+							ng-click="scrollToElement($event)"></a>
+				</li>
+				<li>
+					<a href="#" 
+							class="js-scroll-to"
+							title="Contacto"
+							data-scroll-to="anchor-5"
+							ng-click="scrollToElement($event)"></a>
+				</li>
+			</ul>
+		</section>
+
+		<footer>
+			<div class="grid-960 center-element justify-content align-middle">
+				<div class="inline-block">
+					<img src="../img/logo-red.png"><br>
+					<p class="text-right">Emotional Technology</p>
+				</div>
+				<div class="inline-block">
+					<ul class="social-media">
+						<li class="inline-block"><a href="#" title="facebook"><i class="icon-facebook"></a></i></li>
+						<li class="inline-block"><a href="#" title="twitter"><i class="icon-twitter"></a></i></li>
+						<li class="inline-block"><a href="#" title="linkedin"><i class="icon-linkedin"></a></i></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+</div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+  
+
+  <script type="text/javascript">    
+    
+		  var app = angular.module('myapp', ['ngMaterial']);
+
+			app.controller('MyController', function($scope, $mdSidenav) {
+			  $scope.isSidenavOpen = false;
+			    
+			  $scope.openRightMenu = function() {
+			    $mdSidenav('right').toggle();
+			  };
+
+			  $scope.toggleContent = function($ev) {
+			  	var id = angular.element($ev.currentTarget).attr('data-content');
+			  	angular.element('#'+id).toggleClass('hidden');			  	
+			  };
+
+			  $scope.scrollToElement = function($ev) {
+			  	var anchor = angular.element($ev.currentTarget).attr('data-scroll-to');
+			  	angular.element('.js-scroll-to').removeClass('active');
+			  	angular.element('[data-scroll-to="'+anchor+'"]').addClass('active');
+			  	$('html, body').animate({
+					    scrollTop: $('#'+anchor).offset().top
+					}, 1000);
+			  }
+			});
+  </script>
+  
+</body>
 </html>

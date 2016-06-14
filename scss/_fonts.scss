@@ -1,0 +1,100 @@
+
+$font1: 'montserratregular', sans-serif;
+$font2: 'montserratbold', sans-serif;
+$font3: 'helveticaneue', sans-serif;
+
+.font-montserrat-regular {font-family: $font1}
+.font-montserrat-bold {font-family: $font2}
+.font-helveticaneue {font-family: $font3}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'helveticaneue';
+	src: url('../fonts/HelveticaNeueLTStd-Lt.eot');
+	src: url('../fonts/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
+		url('../fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+		url('../fonts/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?v54yek');
+    src:    url('../fonts/icomoon.eot?v54yek#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?v54yek') format('truetype'),
+        url('../fonts/icomoon.woff?v54yek') format('woff'),
+        url('../fonts/icomoon.svg?v54yek#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+.icon-twitter:before {
+    content: "\ea96";
+}
+.icon-linkedin:before {
+    content: "\eaca";
+}
+
+
+
+
+/*Icons_______________________________________*/
+
+.icon-bitemo {
+	display: inline-block;
+    font-size: 3rem;
+    line-height: 3em;
+    border-radius: 50%;
+    text-align: center;
+    width: 3em;
+    height: 3em;
+    border: .1em solid #fff;
+    .material-icons {
+    	line-height: inherit;
+    	font-size: 2em;
+    	color: $color3;
+    }
+}
