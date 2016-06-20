@@ -127,6 +127,13 @@
 	&:after {
 		padding-top: 46.4%;
 	}
+
+	.md-button.md-fab {
+		background: transparent !important;
+		border: 1px solid #cdcdce;
+		color: #d70904;
+		box-shadow: none;
+	}
 }
 
 .page-3 {
@@ -153,7 +160,6 @@
 	.contact-form {
 		md-input-container {
 			width: 100%;
-			margin: 3px 0;
 		}
 	}
 	.title {
@@ -170,6 +176,9 @@
 			width: 22.5rem;
 			.material-icons {
 				margin-top: 7px;
+			}
+			&[disabled] {
+				background-color: #dcdcdc !important;
 			}
 		}
 	}

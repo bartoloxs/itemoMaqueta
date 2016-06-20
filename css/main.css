@@ -414,6 +414,11 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
     margin-top: 30px; }
   .page-2:after {
     padding-top: 46.4%; }
+  .page-2 .md-button.md-fab {
+    background: transparent !important;
+    border: 1px solid #cdcdce;
+    color: #d70904;
+    box-shadow: none; }
 
 .page-3 {
   position: relative;
@@ -430,8 +435,7 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
   background-color: white;
   padding: 7.4% 3rem; }
   .page-5 .contact-form md-input-container {
-    width: 100%;
-    margin: 3px 0; }
+    width: 100%; }
   .page-5 .title {
     line-height: 1;
     margin-bottom: 4.6rem; }
@@ -444,6 +448,8 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
       width: 22.5rem; }
       .page-5 fieldset .md-button .material-icons {
         margin-top: 7px; }
+      .page-5 fieldset .md-button[disabled] {
+        background-color: #dcdcdc !important; }
   .page-5 .contact-info {
     max-width: 250px; }
   .page-5 .contact-form ul {

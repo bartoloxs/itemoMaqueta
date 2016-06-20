@@ -3,6 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+  <link rel="icon" type="../image/png" sizes="16x16" href="../img/favicon.png">
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
@@ -169,7 +170,12 @@
 							<p class="f18 dark-gray">
 								Gracias al monitor emocional se pueden crear patrones para configurar alertas de cualquier tipo. El potencial es infinito.
 							</p>
-							<p class="f16 font-montserrat-bold">SOLICITAR MÁS INFORMACIÓN</p>
+							<p class="f16 font-montserrat-bold">SOLICITAR MÁS INFORMACIÓN 
+								<md-button class="md-fab" aria-label="FAB"
+								data-scroll-to="anchor-5"
+								ng-click="scrollToElement($event)">
+									<i class="material-icons">add</i></p>
+								</md-button>
 						</div>
 					<div class="next-section center-text">
 						<md-button class="no-background"
@@ -216,7 +222,9 @@
 							</li>
 						</ul>
 						<div class="center-text">
-							<md-button class="red hide-halo">
+							<md-button class="red hide-halo"
+								data-scroll-to="anchor-5"
+								ng-click="scrollToElement($event)">
 								<span>Reserva de la licencia</span>
 						  </md-button>
 						</div>
