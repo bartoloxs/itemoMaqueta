@@ -241,7 +241,10 @@
 				</div>
 			</article>
 			<article id="anchor-4" class="page page-4 section">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.366749228148!2d-3.707271084276604!3d40.42287726318882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287d2c855a8b%3A0x9d6036b7ce9ff090!2sCalle+de+la+Madera%2C+13%2C+28004+Madrid!5e0!3m2!1ses!2ses!4v1465663128822" height="500" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+				<div class="iframe-container" ng-mouseleave="noPointerEvetns()">
+						<div class="overlay" onClick="style.pointerEvents='none'"></div>	
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.366749228148!2d-3.707271084276604!3d40.42287726318882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287d2c855a8b%3A0x9d6036b7ce9ff090!2sCalle+de+la+Madera%2C+13%2C+28004+Madrid!5e0!3m2!1ses!2ses!4v1465663128822" height="500" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+				</div>
 				<div class="subscribe-newsletter">
 					<form id="newletter-form" class="grid-960 center-element justify-content">
 						<div class="inline-block">
@@ -385,6 +388,10 @@
 			  	$('html, body').animate({
 					    scrollTop: $('#'+anchor).offset().top
 					}, 1000);
+			  }
+
+			  $scope.noPointerEvetns = function() {
+			  		$('.overlay').css('pointer-events', 'auto');
 			  }
 			});
   </script>
